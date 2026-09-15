@@ -149,6 +149,7 @@ activemq-data/
 
 # Environments
 .env
+.env.bak*
 .envrc
 .venv
 env/
@@ -216,3 +217,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+data/errors.log
+*.tmp
+
+# Backups do .env criados pela aba de configuração: contêm credenciais.
+.env.bak*
+!.env.example
